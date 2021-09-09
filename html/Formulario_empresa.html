@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <style>
+        @font-face {
+            font-family: 'Raleway-Bold';
+            src: url('resources/fonts/Raleway-Bold.ttf') format('truetype');
+            font-style: normal;
+            font-weight: normal;
+            }
+        @font-face {
+            font-family: 'Raleway-Regular';
+            src: url('resources/fonts/Raleway-Regular.ttf') format('truetype');
+            font-style: normal;
+            font-weight: normal;
+        }
+        body {
+            background-color: #3c3c3c;
+        }
+        #titulo {
+            margin-left: 5%;
+            font-family: 'Raleway-Bold';
+            font-weight: normal;
+            font-style: normal;
+            color: white;
+        }
+        form {
+            color: white;
+            font-family: 'Raleway-Regular';
+            font-weight: normal;
+            font-style: normal;
+        }
+        section {
+            margin: 5%;
+        }
+        #button_enviar {
+            box-sizing: border-box;
+            background-color: blueviolet;
+            color: white;
+            width: 60;
+            font-family: 'Raleway-Regular';
+        }
+        input {
+            font-family: 'Raleway-Regular';
+            margin-left: 3%;
+            width: max-content;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Regístrate</h1>
+    <hr>
+    <form action="" method="post">
+        <div>
+            <section>
+                <br>
+                <label for="nombre_empresa">Nombre de usuario: </label>
+                <input type="text" id="nombre" name="nombres_usuario_empresas" required>
+                <br>
+                <br>
+                <label for="password">Contraseña: </label>
+                <input type="password" id="password" name="password_usuario" required>
+                <br>
+                <br>
+                <label for="confirmacion_password">Confirmar Contraseña: </label>
+                <input type="password" id="confirmacion_password" name="confirmacion_password_usuario" required>
+                <br>
+            </section>
+        </div>
+        <hr>
+        <div>
+        <section>
+                <h2>Información empresa</h2>
+                <br>
+                <label for="nombre_empresa">Nombre: </label>
+                <input type="text" id="nombre" name="nombres_perfil" required>
+                <br>
+                <br>
+                <label for="tipo_identificacion">Identificacion: </label>
+                <select name="tipo_identificacion" id="tipo_identificacion">
+                    <option value="campo_vacio"></option>
+                    <option value="nit">Nit</option>
+                    <option value="rut">Rut</option>               
+                </select>
+                <br>
+                <br>
+                <label for="numero_identificacion">Número de Identificación: </label>
+                <input type="number" id="numero_identificacion" name="numero_identificacion_perfil" required>
+                <br>
+                <br>
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email_perfil" required>
+                <br>
+                <br>
+                <label for="telefono">Teléfono: </label>
+                <input type="tel" id="telefono" name="telefono_perfil" required>
+                <br>
+                <br>
+                <label for="direccion">Dirección: </label>
+                <input type="direccion" id="direccion" name="direccion_perfil" required>
+                <br>
+                <br>
+                <label for="area">Área</label>
+                <select name="area"id="area_empresa">
+                    <option value="logistica_eventos">Logistica de eventos</option>
+                    <option value="sonido_iluminacion">Sonido e iluminacion</option>
+                    <option value="alimentos">Alimentos</option>
+                </select>
+                <button type="submit" id="button_enviar">Enviar</button>
+        </div>
+    </section>
+    </form>
+</body>
+</html>
