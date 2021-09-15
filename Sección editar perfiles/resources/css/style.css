@@ -97,6 +97,8 @@ width: 100%;
     border-radius: 30px;
     width: 35%;
     height: 8%;
+    border: 1px solid black;
+    outline: none;
     position: fixed;
     right: 50rem;
     left: 33rem;
